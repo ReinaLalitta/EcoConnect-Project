@@ -44,7 +44,6 @@ php artisan db:seed
 ```
 php artisan serve
 ```
-8. Access the application by visiting http://localhost:8000 in your web browser.
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to Econnete, please follow these steps:
