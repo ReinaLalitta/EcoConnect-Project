@@ -1,0 +1,13 @@
+{
+  "name": "ecoconnect-project",
+  "version": "1.0.0",
+  "description": "EcoConnect is a comprehensive platform committed to fostering sustainable living practices and building a network of environmentally conscious individuals, communities, and businesses. The mission is to empower and inspire people to adopt eco-friendly habits, support green initiatives, and engage in activities that contribute to environmental conservation. By providing resources, tools, and a vibrant community, EcoConnect aims to make sustainable living accessible and actionable for everyone, driving collective efforts towards a healthier planet.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
