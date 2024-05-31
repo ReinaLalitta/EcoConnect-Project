@@ -1,11 +1,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: lavender;
+    color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #0066CC;
     color: white;
     padding: 15px 0;
 }
@@ -40,7 +41,7 @@ header nav ul li a {
 }
 
 .hero {
-    background: url('path/to/your/image.jpg') no-repeat center center/cover;
+    background: url('images/hero.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 0;
@@ -70,7 +71,7 @@ header nav ul li a {
 }
 
 .signup {
-    background-color: #FFF;
+    background-color: lightskyblue;
     padding: 50px 0;
 }
 
@@ -142,6 +143,66 @@ header nav ul li a {
     font-size: 48px;
     color: #4CAF50;
     margin-bottom: 10px;
+}
+
+.gallery {
+    background-color: #FFF;
+    padding: 50px 0;
+}
+
+.gallery .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+}
+
+.gallery-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.testimonials {
+    background-color: #E0E0E0;
+    padding: 50px 0;
+}
+
+.testimonials .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.testimonial p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-size: 14px;
+    color: #777;
 }
 
 footer {

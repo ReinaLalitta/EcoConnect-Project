@@ -14,4 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // Here you would typically send the form data to the server using fetch or XMLHttpRequest.
         alert('Sign up successful! Check the console for form data.');
     });
+
+    // Adding some interactivity to the gallery section
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            alert('You clicked on a gallery item!');
+        });
+    });
 });
