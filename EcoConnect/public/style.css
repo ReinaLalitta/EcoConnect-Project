@@ -1,3 +1,4 @@
+/* Existing CSS */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -36,10 +37,24 @@ header nav ul li {
 }
 
 header nav ul li a {
+    position: relative;
     color: white;
     text-decoration: none;
 }
 
+header nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+header nav ul li a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #0066CC;
+}
 .hero {
     background: url('images/hero.jpg') no-repeat center center/cover;
     color: white;
