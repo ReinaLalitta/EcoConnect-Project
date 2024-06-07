@@ -1,0 +1,170 @@
+/* dashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lavender;
+    color: #333;
+}
+
+header {
+    background-color: #0066CC;
+    color: white;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.dashboard {
+    padding: 50px 0;
+}
+
+.dashboard .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-menu {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.dashboard-menu ul li a {
+    background-color: #0066CC;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.dashboard-menu ul li a:hover {
+    background-color: #004A99;
+}
+
+.dashboard-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content div {
+    margin-bottom: 20px;
+}
+
+#profile, #projects, #marketplace, #events, #messages, #activity {
+    margin-top: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45A049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+button {
+    background-color: #0066CC;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #004A99;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

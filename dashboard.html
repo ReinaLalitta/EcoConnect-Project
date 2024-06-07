@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - EcoConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EcoConnect Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="dashboard">
+            <div class="container">
+                <h2>Welcome, [Username]</h2>
+                <div class="dashboard-menu">
+                    <ul>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#projects">My Projects</a></li>
+                        <li><a href="#marketplace">Marketplace</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#messages">Messages</a></li>
+                        <li><a href="#activity">Activity Feed</a></li>
+                    </ul>
+                </div>
+                <div class="dashboard-content">
+                    <div id="profile">
+                        <h3>Profile Information</h3>
+                        <form id="profileForm">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <input type="submit" value="Update Profile">
+                        </form>
+                    </div>
+                    <div id="projects">
+                        <h3>My Projects</h3>
+                        <button onclick="showProjectForm()">Add Project</button>
+                        <div id="projectForm" style="display: none;">
+                            <form id="addProjectForm">
+                                <label for="projectName">Project Name:</label>
+                                <input type="text" id="projectName" name="projectName" required>
+                                <label for="projectDescription">Description:</label>
+                                <textarea id="projectDescription" name="projectDescription" required></textarea>
+                                <input type="submit" value="Add Project">
+                            </form>
+                        </div>
+                        <ul id="projectList">
+                            <!-- List user's projects here -->
+                        </ul>
+                    </div>
+                    <div id="marketplace">
+                        <h3>Marketplace Activity</h3>
+                        <button onclick="showMarketplaceForm()">Add Item</button>
+                        <div id="marketplaceForm" style="display: none;">
+                            <form id="addMarketplaceForm">
+                                <label for="itemName">Item Name:</label>
+                                <input type="text" id="itemName" name="itemName" required>
+                                <label for="itemDescription">Description:</label>
+                                <textarea id="itemDescription" name="itemDescription" required></textarea>
+                                <input type="submit" value="Add Item">
+                            </form>
+                        </div>
+                        <ul id="marketplaceList">
+                            <!-- List marketplace items here -->
+                        </ul>
+                    </div>
+                    <div id="events">
+                        <h3>Events Participation</h3>
+                        <button onclick="showEventForm()">Add Event</button>
+                        <div id="eventForm" style="display: none;">
+                            <form id="addEventForm">
+                                <label for="eventName">Event Name:</label>
+                                <input type="text" id="eventName" name="eventName" required>
+                                <label for="eventDescription">Description:</label>
+                                <textarea id="eventDescription" name="eventDescription" required></textarea>
+                                <input type="submit" value="Add Event">
+                            </form>
+                        </div>
+                        <ul id="eventList">
+                            <!-- List events user is participating in here -->
+                        </ul>
+                    </div>
+                    <div id="messages">
+                        <h3>Messages</h3>
+                        <ul id="messageList">
+                            <!-- List user messages here -->
+                        </ul>
+                    </div>
+                    <div id="activity">
+                        <h3>Activity Feed</h3>
+                        <ul id="activityList">
+                            <!-- List recent activities here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EcoConnect. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
