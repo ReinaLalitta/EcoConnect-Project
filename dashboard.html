@@ -34,6 +34,8 @@
                         <li><a href="#events">Events</a></li>
                         <li><a href="#messages">Messages</a></li>
                         <li><a href="#activity">Activity Feed</a></li>
+                        <li><a href="#notifications">Notifications</a></li>
+                        <li><a href="#friends">Friends</a></li>
                     </ul>
                 </div>
                 <div class="dashboard-content">
@@ -44,6 +46,12 @@
                             <input type="text" id="username" name="username" required>
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required>
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                            <label for="bio">Bio:</label>
+                            <textarea id="bio" name="bio" required></textarea>
+                            <label for="location">Location:</label>
+                            <input type="text" id="location" name="location" required>
                             <input type="submit" value="Update Profile">
                         </form>
                     </div>
@@ -56,6 +64,8 @@
                                 <input type="text" id="projectName" name="projectName" required>
                                 <label for="projectDescription">Description:</label>
                                 <textarea id="projectDescription" name="projectDescription" required></textarea>
+                                <label for="projectStatus">Status:</label>
+                                <input type="text" id="projectStatus" name="projectStatus" required>
                                 <input type="submit" value="Add Project">
                             </form>
                         </div>
@@ -107,6 +117,18 @@
                             <!-- List recent activities here -->
                         </ul>
                     </div>
+                    <div id="notifications">
+                        <h3>Notifications</h3>
+                        <ul id="notificationList">
+                            <!-- List user notifications here -->
+                        </ul>
+                    </div>
+                    <div id="friends">
+                        <h3>Friends</h3>
+                        <ul id="friendList">
+                            <!-- List user's friends here -->
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -116,6 +138,6 @@
             <p>&copy; 2024 EcoConnect. All rights reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>

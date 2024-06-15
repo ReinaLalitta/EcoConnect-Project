@@ -1,5 +1,3 @@
-/* dashboard.css */
-
 body {
     font-family: Arial, sans-serif;
     background-color: lavender;
@@ -45,74 +43,40 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-.dashboard {
+.register-section {
     padding: 50px 0;
 }
 
-.dashboard .container {
+.register-section .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.dashboard h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.dashboard-menu {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.dashboard-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.dashboard-menu ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.dashboard-menu ul li a {
-    background-color: #0066CC;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.dashboard-menu ul li a:hover {
-    background-color: #004A99;
-}
-
-.dashboard-content {
+.register-box {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.dashboard-content div {
+.register-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
     margin-bottom: 20px;
 }
 
-#profile, #projects, #marketplace, #events, #messages, #activity, #notifications, #friends {
-    margin-top: 20px;
-}
-
-form {
-    margin-bottom: 20px;
-}
-
-form label {
+.input-group label {
     display: block;
     margin-bottom: 5px;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="tel"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -120,7 +84,7 @@ form textarea {
     border-radius: 5px;
 }
 
-form input[type="submit"] {
+.input-group input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -129,36 +93,21 @@ form input[type="submit"] {
     cursor: pointer;
 }
 
-form input[type="submit"]:hover {
+.input-group input[type="submit"]:hover {
     background-color: #45A049;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.extra-links {
+    text-align: center;
 }
 
-ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+.extra-links a {
+    color: #0066CC;
+    text-decoration: none;
 }
 
-ul li:last-child {
-    border-bottom: none;
-}
-
-button {
-    background-color: #0066CC;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-button:hover {
-    background-color: #004A99;
+.extra-links a:hover {
+    text-decoration: underline;
 }
 
 footer {

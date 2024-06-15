@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     <input type="text" id="username" name="username" value="${userData.username}" required>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" value="${userData.email}" required>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" value="${userData.fullname}" required>
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" required>${userData.bio}</textarea>
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" value="${userData.location}" required>
                     <input type="submit" value="Update Profile">
                 </form>
             `;
@@ -38,6 +44,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // Populate activity feed section
             const activityList = userData.activity.map(activity => `<li>${activity}</li>`).join('');
             document.querySelector('#activity #activityList').innerHTML = activityList;
+
+            // Populate notifications section
+            const notificationList = userData.notifications.map(notification => `<li>${notification}</li>`).join('');
+            document.querySelector('#notifications #notificationList').innerHTML = notificationList;
+
+            // Populate friends section
+            const friendList = userData.friends.map(friend => `<li>${friend}</li>`).join('');
+            document.querySelector('#friends #friendList').innerHTML = friendList;
         })
         .catch(error => console.error('Error fetching user data:', error));
 });
