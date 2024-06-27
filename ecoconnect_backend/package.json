@@ -1,0 +1,16 @@
+{
+  "name": "ecoconnect_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+     "start": "nodemon server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3"
+  }
+}
